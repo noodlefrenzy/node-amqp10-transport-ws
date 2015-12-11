@@ -35,5 +35,12 @@
   "bugs": {
     "url": "https://github.com/noodlefrenzy/node-amqp10-transport-ws/issues"
   },
-  "homepage": "https://github.com/noodlefrenzy/node-amqp10-transport-ws"
+  "homepage": "https://github.com/noodlefrenzy/node-amqp10-transport-ws",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.4",
+    "uuid": "^2.0.1"
+  }
 }
