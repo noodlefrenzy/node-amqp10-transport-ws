@@ -42,5 +42,8 @@
     "jshint": "^2.8.0",
     "mocha": "^2.3.4",
     "uuid": "^2.0.1"
+  },
+  "dependencies": {
+    "nodejs-websocket": "^1.4.1"
   }
 }
