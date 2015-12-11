@@ -1,0 +1,39 @@
+{
+  "name": "amqp10-transport-ws",
+  "version": "0.0.1",
+  "description": "Provides a Websocket implementation for the transport layer for node-amqp10.",
+  "main": "./lib",
+  "scripts": {
+    "pretest": "jshint lib",
+    "test": "mocha --recursive --globals setImmediate,clearImmediate --recursive --check-leaks --colors -t 60000 --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodlefrenzy/node-amqp10-transport-ws.git"
+  },
+  "keywords": [
+    "amqp",
+    "amqp 1.0",
+    "amqp-1-0",
+    "amqp10",
+    "messaging",
+    "queues",
+    "websocket"
+  ],
+  "author": {
+    "name": "noodlefrenzy",
+    "email": "milanz@microsoft.com",
+    "url": "http://www.mikelanzetta.com"
+  },
+  "contributors": [
+    {
+      "name": "pierreca",
+      "url": "https://github.com/pierreca"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noodlefrenzy/node-amqp10-transport-ws/issues"
+  },
+  "homepage": "https://github.com/noodlefrenzy/node-amqp10-transport-ws"
+}
