@@ -10,6 +10,18 @@ node-amqp10-transport-ws
 
 Provides a Websocket implementation for the transport layer for node-amqp10.
 
+The [amqp10](http://github.com/noodlefrenzy/node-amqp10/) library exports a `TransportProvider` class that is used to manage and inject new transports for the library to use.
+Each transport should expose a `register` method that takes the `TransportProvider` as an argument, allowing any transport to register a new protocol to be used.
+
+In the present case the protocol registered is `wss` (webocket transport using the [node-websocket](https://github.com/sitegui/nodejs-websocket) library).
+
 # Usage
 
-To Be Provided.
+```js
+var amqp10 = require('amqp10');
+var wsTransport = require('amqp10-transport-ws');
+
+wsTransport.register(amqp10.TransportProvider);
+```
+
+Once registered, any URI starting with `wss://` given to the `connect` method of `amqp10.Client` will be handled by the websocket transport.
