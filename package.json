@@ -1,6 +1,6 @@
 {
   "name": "amqp10-transport-ws",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Provides a Websocket implementation for the transport layer for node-amqp10.",
   "main": "./lib",
   "scripts": {
