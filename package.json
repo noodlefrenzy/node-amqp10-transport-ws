@@ -44,6 +44,6 @@
     "uuid": "^2.0.1"
   },
   "dependencies": {
-    "nodejs-websocket": "^1.4.1"
+    "nodejs-websocket": "^1.7.0"
   }
 }
